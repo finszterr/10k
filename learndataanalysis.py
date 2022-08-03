@@ -19,7 +19,7 @@ request_body = {
 		'videoId': video_id,
 		'topLevelComment': {
 			'snippet': {
-				'textOriginal': 'Koceka'
+				'textOriginal': 'BC'
 			}
 		}
 	}
