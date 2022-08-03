@@ -1,0 +1,3 @@
+import last
+
+last.getLatestId()

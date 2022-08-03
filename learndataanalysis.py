@@ -1,4 +1,5 @@
 from google_apis import create_service
+import last
 
 CLIENT_FILE = 'client_secret.json'
 API_NAME = 'youtube'
@@ -11,7 +12,7 @@ SCOPES = [
 
 service = create_service(CLIENT_FILE, API_NAME, API_VERSION, SCOPES)
 
-video_id = 'vs2X0VQkDZw'
+video_id = last.getLatestId() # My own video 'vs2X0VQkDZw'
 
 # Example 1. Post A Comment
 request_body = {
