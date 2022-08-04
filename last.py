@@ -13,21 +13,20 @@ def getLatestId():
 
 	service = create_service(CLIENT_FILE, API_NAME, API_VERSION, SCOPES)
 
-	playlist_id = 'UUX6OQ3DkcsbYNE6H8uQQuVA'
-	time.sleep(10)
-
-	# Get latest video
+	# Get latest video of Uploads playlist -> MrBeasts: UUX6OQ3DkcsbYNE6H8uQQuVA
 	response = service.playlistItems().list(
 			part="snippet",
 			maxResults=1,
 			playlistId="UUX6OQ3DkcsbYNE6H8uQQuVA"
 		)
-	lastShortId = 'aaa' #'dZklZVaU4AI'
-	for i in range(10):
+	lastShortId = 'dZklZVaU4AI' # Last Mr Beasts short id: 'dZklZVaU4AI'
+	#while True:
+	for _ in range(9):
 		r = response.execute()
 		r = r['items'][0]['snippet']['resourceId']['videoId']
 		if(r != lastShortId):
 			print(r)
 			break
+		print('No')
 	
 	return r

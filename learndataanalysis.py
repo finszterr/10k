@@ -20,7 +20,7 @@ request_body = {
 		'videoId': video_id,
 		'topLevelComment': {
 			'snippet': {
-				'textOriginal': 'BC'
+				'textOriginal': 'first'
 			}
 		}
 	}
@@ -33,17 +33,4 @@ response = service.commentThreads().insert(
 
 print(response)
 
-
-# # Example 2. Reply To A Comment
-# comment_id = '<comment id>'
-# request_body = {
-# 	'snippet': {
-# 		'parentId': comment_id,
-# 		'textOriginal': 'Hello'
-# 	}
-# }
-
-response = service.comments().insert(
-	part='snippet',
-	body=request_body
-).execute()
+print('commented')
