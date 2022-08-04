@@ -20,7 +20,7 @@ request_body = {
 		'videoId': video_id,
 		'topLevelComment': {
 			'snippet': {
-				'textOriginal': 'first'
+				'textOriginal': 'f'
 			}
 		}
 	}

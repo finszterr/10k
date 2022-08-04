@@ -21,7 +21,8 @@ def getLatestId():
 		)
 	lastShortId = 'dZklZVaU4AI' # Last Mr Beasts short id: 'dZklZVaU4AI'
 	#while True:
-	for _ in range(9):
+	#for _ in range(1):
+	while True:
 		r = response.execute()
 		r = r['items'][0]['snippet']['resourceId']['videoId']
 		if(r != lastShortId):
